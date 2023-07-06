@@ -7,19 +7,19 @@ const PORT = process.env.PORT || 3000;
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static('public'));
 
-
-//HTML
+// Serve the notes.html page
 app.get('/notes', (req, res) => {
-    res.sendFile(path.join(__dirname, '/public/notes.html'));
-  });
-  
-  app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, '/public/index.html'));
-  });
+  res.sendFile(path.join(__dirname, '/public/notes.html'));
+});
 
-//API
+// Serve the index.html page for all other routes
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, '/public/index.html'));
+});
+
+// Retrieve all notes
 app.get('/api/notes', (req, res) => {
   fs.readFile('./db.json', 'utf8', (err, data) => {
     if (err) {
@@ -32,6 +32,7 @@ app.get('/api/notes', (req, res) => {
   });
 });
 
+// Save a new note
 app.post('/api/notes', (req, res) => {
   const newNote = req.body;
 
@@ -59,6 +60,7 @@ app.post('/api/notes', (req, res) => {
   });
 });
 
+// Delete a note
 app.delete('/api/notes/:id', (req, res) => {
   const noteId = parseInt(req.params.id);
 
@@ -89,7 +91,7 @@ app.delete('/api/notes/:id', (req, res) => {
   });
 });
 
-// Start server
+// Start the server
 app.listen(PORT, () => {
   console.log(`App listening on PORT ${PORT}`);
 });

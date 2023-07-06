@@ -51,6 +51,12 @@ THEN I am presented with empty fields to enter a new note title and the note’s
 
 <br></br>
 
+# Heroku Deployment
+
+<a href="https://note-taker-app-lnm-cb98f369aa59.herokuapp.com/">***Laryn's Note Taker App***
+
+<br></br>
+
 # UI SneakPeak ❤️ 
 
 ![Alt text](img/Landingpage.png)

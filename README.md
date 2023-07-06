@@ -7,6 +7,7 @@
 
 ## Description
 
+As a new developer, I want to create an app and deploy on Heroku that will allow me to take notes and save them. This will allow for better organization and time management so that I can keep track of things I do not want to forget.
 ## The Task
 
 Creating an application called Note Taker that can be used to write and save notes. This application will use an Express.js back end and will save and retrieve note data from a JSON file.
@@ -14,20 +15,11 @@ Creating an application called Note Taker that can be used to write and save not
 
 ##  Features :
 
-1) 
-2) 
-3) 
-4) 
+1) Smooth, clean interface
+2) An easy-to-get-started button to begin note taking
+3) A bold title for the note
+4) A section to begin writing and an option to start a new note
 
-<br></br>
-## Development Tools:
-<br>
-<div align = "center">
-
-![Alt text](images/dev-tools.png)
-
-
-</div>
 
 <br></br>
 
@@ -61,13 +53,17 @@ THEN I am presented with empty fields to enter a new note title and the note’s
 
 # UI SneakPeak ❤️ 
 
-![Alt text]
+![Alt text](img/Landingpage.png)
+![Alt text](img/Notepage1.png)
+![Alt text](img/Notepage2.png)
 
 <br><br>
 
 # Refrences
 
-- 
+- <a href="https://coding-boot-camp.github.io/full-stack/heroku/heroku-deployment-guide">edX Boot Camps LLC
+
+- <a href="https://www.youtube.com/@WebDevSimplified">Web Dev Simplified YouTube Channel
 
 - <a href="https://www.w3schools.com">w3schools</a>
 
